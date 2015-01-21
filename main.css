@@ -1,0 +1,44 @@
+
+div {
+  height: 1000px;
+  width: 25%;
+  float: left;
+  
+}
+h2 {
+  font-family: 'Molengo', sans-serif;
+  font-size: 35px;
+  color: rgb(51, 51, 51);
+  color: rgba(51, 51, 51, .9);
+  padding-left: 15px;
+  
+}
+ul {
+  list-style: none;
+  padding-left: 15px;
+  
+}
+li {
+  list-style-type: none;
+  
+}
+a {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: rgb(51, 51, 51);
+  color: rgba(51, 51, 51, .9);
+  text-decoration: none;
+  font-size: 23px;
+}
+.first {
+  background-color: rgb(201, 232, 235);
+  
+}
+.second {
+  background-color: rgb(246, 183, 89);
+}
+.third {
+  background-color: rgb(236, 67, 46);
+}
+.fourth {
+  background-color: rgb(208, 231, 143);
+}
