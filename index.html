@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <head>
-  <title>Jimmy Bryant</title>
-  <style>
-  .image-search {
-    width: 1000px;
-    height: 500px;
-    overflow: auto;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0; 
-  }
-  body {
-    text-align: center;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: auto, auto;
-    background-position: center;
-    color: grey;
-    font-family: helvetica;
-    background-image: url("http://i.imgur.com/LnpWhPI.jpg");
-  }
-  p {
-    font-size: 22px;
-  }
-  input {
-    border: 0;
-    padding: 10px;
-    font-size: 18px;
-  }
-  input[type="submit"] {
-    background: grey;
-    color: white;
-  }
-  img {
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(http://link-to-your/image.jpg) no-repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  }
-  </style>
+    <link rel="stylesheet" href="stylesheets/main.css">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Jimmy Bryant</title>
 </head>
-<div class="image-search">
-  <body>
-    <img src="http://i.imgur.com/yZ2IXD4.jpg">
-    <p>Hi I'm Jimmy Bryant, a Seattle-based Software Developer.</p>
-    <input type="email" placeholder="Your email">
-    <input type="submit">
-  </body>
-</div>
+<body>
+
+  <div class="first">
+    <h2>THOUGHTS</h2>
+    <ul>
+      <li class="twitter">
+        <a href="https://twitter.com/savebutter">twitter.</a>
+      </li>
+    </ul>
+  </div>
+  <div class="second">
+    <h2>PROJECTS</h2>
+    <ul>
+      <li class="github">
+        <a href="https://github.com/JimBry">github.</a>
+      </li>
+    </ul>
+  </div>
+  <div class="third">
+    <h2>ESSAYS</h2>
+    <ul>
+      <li class="stanford">
+        <a href="">stanford.</a>
+      </li>
+    </ul>
+  </div>
+  <div class="fourth">
+    <h2>FUN</h2>
+    <ul>
+      <li class="instagram">
+        <a href="http://instagram.com/tokyomyth/">instagram.</a>
+      </li>
+    </ul>
+  </div>
+
+    <script>
+    window.onload = function() {
+        $('.first').hover(function() {
+            $('.twitter').toggleClass('animated fadeInRight');
+        });
+        $('.second').hover(function() {
+            $('.github').toggleClass('animated fadeInRight')
+        });
+        $('.third').hover(function() {
+            $('.stanford').toggleClass('animated fadeInRight');
+        });
+        $('.fourth').hover(function() {
+            $('.instagram').toggleClass('animated fadeInRight');
+        });
+    };
+    </script>
+</body>
+</html>
